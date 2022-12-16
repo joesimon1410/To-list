@@ -31,13 +31,13 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void addControls() {
-        title = this.<EditText>findViewById(R.id.edtextTitle);
+        title = this.<EditText>findViewById(R.id.edtextTitle_detail);
         title.setText(intent.getStringExtra("title"));
 
-        deadline = this.<EditText>findViewById(R.id.edtextDeadline);
+        deadline = this.<EditText>findViewById(R.id.edtextDeadline_detail);
         deadline.setText(intent.getStringExtra("deadline"));
 
-        content = this.<EditText>findViewById(R.id.edtextContent);
+        content = this.<EditText>findViewById(R.id.edtextContent_detail);
         content.setText(intent.getStringExtra("content"));
     }
 }

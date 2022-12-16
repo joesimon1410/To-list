@@ -17,7 +17,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtextTitle"
+        android:id="@+id/edtextTitle_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"/>
@@ -30,7 +30,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtextDeadline"
+        android:id="@+id/edtextDeadline_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"/>
@@ -46,7 +46,7 @@
 
 
     <EditText
-        android:id="@+id/edtextContent"
+        android:id="@+id/edtextContent_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="2dp"
@@ -59,14 +59,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnEdit"
+            android:id="@+id/btnEdit_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"
             android:text="Edit"/>
 
         <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btnSave_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"

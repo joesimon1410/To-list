@@ -4,11 +4,13 @@ public class Tasks {
     String title;
     String content;
     String deadline;
+    Boolean isComplete;
 
     public Tasks(String title, String content, String deadline) {
         this.title = title;
         this.content = content;
         this.deadline = deadline;
+        this.isComplete = false;
     }
 
     public String getTitle() {
@@ -33,5 +35,13 @@ public class Tasks {
 
     public void setDeadline(String deadline) {
         this.deadline = deadline;
+    }
+
+    public Boolean getComplete() {
+        return isComplete;
+    }
+
+    public void setComplete(Boolean complete) {
+        isComplete = complete;
     }
 }

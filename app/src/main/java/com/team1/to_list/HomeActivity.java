@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -68,7 +67,7 @@ public class HomeActivity extends AppCompatActivity {
             tasks.add(new Tasks("abc", "xyz", "01 - 12 - 2022"));
         }
 
-        recyclerViewTasks = (RecyclerView)findViewById(R.id.recylerviewTasks);
+        recyclerViewTasks = (RecyclerView)findViewById(R.id.recylerviewTasks_home);
         tasksAdapter = new TasksAdapter(tasks, this);
 
 
@@ -77,6 +76,6 @@ public class HomeActivity extends AppCompatActivity {
         recyclerViewTasks.setAdapter(tasksAdapter);
         recyclerViewTasks.setLayoutManager(linearLayoutManager);
 
-        btnAdd = this.<Button>findViewById(R.id.btnAddTasks);
+        btnAdd = this.<Button>findViewById(R.id.btnAddTasks_home);
     }
 }
