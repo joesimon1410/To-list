@@ -5,40 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddActivity">
+    tools:context=".DetailActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="3dp"
+        android:paddingTop="60dp"
+        android:paddingLeft="30dp"
         android:paddingBottom="3dp"
         android:text="Title"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtextTitle_add"
-        android:layout_width="match_parent"
+        android:id="@+id/edtextTitle_detail"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"/>
+        android:layout_gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="15sp"
+        android:editable="false"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:paddingLeft="30dp"
         android:text="Deadline"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtextDeadline_add"
-        android:layout_width="match_parent"
+        android:id="@+id/edtextDeadline_detail"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"/>
+        android:layout_gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="15sp"
+        android:editable="false"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="3dp"
+        android:paddingTop="60dp"
+        android:paddingLeft="30dp"
         android:paddingBottom="3dp"
         android:text="Content"
         android:textSize="30sp"
@@ -46,12 +59,14 @@
 
 
     <EditText
-        android:id="@+id/edtextContent_add"
-        android:layout_width="match_parent"
+        android:id="@+id/edtextContent_detail"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:editable="false"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,11 +74,20 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnAdd_add"
+            android:id="@+id/btnEdit_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="120sp"
+            android:text="Edit"/>
+
+        <Button
+            android:id="@+id/btnSave_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
             android:layout_marginLeft="15sp"
-            android:text="Add"/>
+            android:text="Save"/>
 
     </LinearLayout>
 
